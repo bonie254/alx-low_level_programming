@@ -1,6 +1,6 @@
 /*
  * File: 0-positive_or_negative.c
- * Auth: Bonface masibo
+ * Auth: Brennan D Baraban
  */
 
 #include <stdlib.h>
@@ -29,4 +29,3 @@ int main(void)
 
 	return (0);
 }
-
