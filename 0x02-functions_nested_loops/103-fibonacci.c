@@ -1,34 +1,27 @@
-/*
- * File: 103-fibonacci.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
 
 /**
- * main - Prints the sum of even-valued Fibonacci sequence
- *        terms not exceeding 4000000.
+ * main - This program finds and prints the sum of the even-valued terms.
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, fibsum;
-	float tot_sum;
+	long int i = 1;
+	long int j = 2;
+	long int next;
+	long int sum = j;
 
-	while (1)
+	while (i + j < 4000000)
 	{
-		fibsum = fib1 + fib2;
-		if (fibsum > 4000000)
-			break;
-
-		if ((fibsum % 2) == 0)
-			tot_sum += fibsum;
-
-		fib1 = fib2;
-		fib2 = fibsum;
+		next = i + j;
+		i = j;
+		j = next;
+		if (next % 2 == 0)
+			sum += next;
 	}
-	printf("%.0f\n", tot_sum);
+
+	printf("%ld\n", sum);
 
 	return (0);
 }

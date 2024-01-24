@@ -1,23 +1,18 @@
-/*
- * File: 2-print_alphabet.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
-
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: 0 (success)
  */
 int main(void)
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
+	char c;
+	c = 'a';
+	while
+		(c <= 'z') {
+		putchar(c);
+		c++;
+		}
 	putchar('\n');
-
 	return (0);
 }

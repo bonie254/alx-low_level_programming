@@ -1,1 +1,1 @@
-this is the readme of the directory
+my other read me
